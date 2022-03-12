@@ -1,0 +1,313 @@
+/* Auto layout */
+.SearchField {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  width: 618px;
+
+  margin: auto;
+}
+
+.SearchField form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 270px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+}
+
+.SearchName {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  height: 32px;
+  width: 100%;
+  gap: 16px;
+}
+
+.SearchUsername {
+  padding: 8px 16px;
+  background: #fffefe;
+
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 32px;
+
+  flex-grow: 2;
+}
+
+.submitButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 16px;
+
+  position: static;
+  width: 102px;
+  height: 32px;
+  left: 441px;
+  top: 0px;
+  background: #00cd90;
+  border-radius: 10000px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 24px;
+}
+
+.field {
+  display: flex;
+}
+
+.number_input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+
+  background: #ffffff;
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 0px 24px;
+
+  height: 32px;
+  width: 84px;
+}
+
+.label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+
+  width: 20%;
+  display: flex;
+
+  align-items: center;
+}
+
+.artTags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 16px;
+
+  background: #ffffff;
+
+  border: 1px solid #808080;
+  box-sizing: border-box;
+  border-radius: 8px;
+  height: 32px;
+  width: 100%;
+  margin-left: 24px;
+}
+
+.resultBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 100%;
+
+  margin: 15px 0px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.resultBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  width: 100%;
+
+  background: #00ac79;
+  border-radius: 8px 8px 0px 0px;
+  padding: 10px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+
+.artistBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: #ffffff;
+  width: 100%;
+}
+
+.artistInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.viewProfileButton {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 137px;
+  height: 32px;
+  left: 438px;
+  top: 32px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.artistImage {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.artistText h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.rating {
+  display: flex;
+  gap: 4px;
+  color: #00cd90;
+}
+
+.artistText h3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.nameView {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  position: static;
+  width: 342px;
+  height: 18px;
+  left: 0px;
+  top: 0px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.ratingView {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+
+  position: static;
+  width: 342px;
+  height: 16px;
+  left: 0px;
+  top: 26px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 8px 0px;
+}
+
+.tagList {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-left: 20%;
+  z-index: 100;
+}
+
+.tagItem {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.selectedTag_container {
+  margin-left: 20%;
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: -16px;
+}
+
+.selectedTag {
+  padding: 3px 12px;
+  background: #4cd75f;
+  border-radius: 100000px;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+
+  display: flex;
+  gap: 6px;
+}
+
+.delete_button {
+  cursor: pointer;
+}
+
+.delete_button:hover {
+  color: #fefefe;
+}
+
+.tagItem:hover {
+  color: #00cd90;
+  background-color: #fefefe;
+}
+
+.number_input::-webkit-outer-spin-button,
+.number_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .SearchField {
+    width: 100%;
+  }
+}

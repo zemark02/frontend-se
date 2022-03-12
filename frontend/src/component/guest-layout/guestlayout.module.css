@@ -1,0 +1,44 @@
+.container {
+  min-height: 100vh;
+}
+
+.body {
+  min-width: 100%;
+  min-height: calc(100vh - 112px);
+  background-image: url("../../../public/guest-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: absolute;
+  top: 112px;
+  padding: 40px 24px;
+  z-index: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 730px) {
+  .body {
+    min-height: calc(100vh - 80px);
+    top: 80px;
+    padding: 40px 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .body {
+    min-height: calc(100vh - 60px);
+    top: 60px;
+    padding: 40px 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  .body {
+    min-height: calc(100vh - 50px);
+    top: 50px;
+  }
+}

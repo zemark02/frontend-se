@@ -1,0 +1,52 @@
+.logoimg {
+  height: 80px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  left: 554px;
+  top: 385px;
+
+  background: #ffffff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+
+  padding: 24px 20px;
+  margin: 0x 64px;
+}
+
+.main h5 {
+  margin-bottom: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+@media (max-width: 500px) {
+  .main {
+    margin: 0px 32px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logoimg {
+    height: 55px;
+    margin: 0px;
+  }
+
+  .main {
+    margin: 0px 32px;
+  }
+}
+
+.bottom {
+  margin: 11.5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

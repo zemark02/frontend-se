@@ -1,0 +1,252 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 20px;
+  width: 757px;
+  left: 341px;
+  top: 225px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  gap: 23px;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  position: static;
+  width: 148px;
+  height: 96px;
+  left: 110.5px;
+  top: 126px;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.header {
+  position: static;
+  text-align: center;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col {
+  width: 45%;
+}
+
+.fieldName {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.fieldBox {
+  border-radius: 8px;
+  border: solid #808080 1px;
+  width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  height: 32px;
+  margin-top: 4px;
+}
+
+.label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.add_img {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.add_img p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  margin: 0;
+}
+
+.add_img img {
+  width: 250px;
+  border-radius: 8px;
+}
+
+.add_img_btn {
+  padding: 4px 16px;
+  color: #000000;
+  border: 1px solid #00cd90;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 150px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add_img_btn:hover {
+  color: #00cd90 !important;
+  background-color: #fcfcfc;
+}
+
+.file {
+  display: none;
+}
+
+.changepass_popup_container {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100vw;
+  min-height: 100vh;
+  height: max-content;
+  background-color: #000000aa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.changepass_popup {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.changepass_popup_container h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  margin: 0;
+  word-wrap: break-word;
+  word-break: break-all;
+  width: fit-content;
+}
+.button_container,
+.popup_button_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.err_msg {
+  margin: 16px 4px -8px 0;
+}
+.error_message {
+  margin-top: 10px;
+}
+
+.deletionPopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000aa;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  order: 1;
+  flex-grow: 0;
+}
+.deletionPopup_inner {
+  position: relative;
+  padding: 32px;
+  max-width: 640px;
+  background-color: aliceblue;
+  border-radius: 8px;
+}
+
+.main input::-webkit-outer-spin-button,
+.main input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 850px) {
+  .main {
+    width: 80%;
+    justify-content: center;
+  }
+  .row {
+    flex-direction: column;
+    gap: 23px;
+  }
+  .col {
+    width: 100%;
+  }
+
+  .button_container {
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: center;
+  }
+  .deletionPopup_inner {
+    width: 80%;
+  }
+}
+
+@media (max-width: 520px) {
+  .deletionPopup .popup_button_container {
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 470px) {
+  .changepass_popup {
+    width: 80%;
+  }
+  .main {
+    width: 100%;
+  }
+
+  .popup_button_container {
+    flex-direction: column-reverse;
+    gap: 16px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 350px) {
+  .add_img img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 300px) {
+  .changepass_popup_container h1 {
+    font-size: 18px;
+  }
+}

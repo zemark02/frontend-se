@@ -1,0 +1,94 @@
+.check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  justify-content: center;
+  order: 0;
+  flex-grow: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.check div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.check label:hover {
+  cursor: pointer;
+}
+
+.check input[type="radio"] {
+  width: 17px;
+  height: 17px;
+  background-color: rgb(255, 255, 255);
+  background: #ffffff;
+  border: 1px solid #19d9a0;
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+.check input[type="radio"]:checked {
+  color: #19d9a0;
+}
+
+.dot:hover {
+  cursor: pointer;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.head {
+  padding: 10px;
+
+  position: static;
+  width: 591px;
+  height: 44px;
+
+  background: #00ac79;
+  border-radius: 8px 8px 0px 0px;
+
+  order: 0;
+
+  text-align: center;
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.boxColor div :nth-child(odd) {
+  background: #ffffff;
+}
+.boxColor div :nth-child(even) {
+  background: #e5e5e5;
+}
+
+@media (max-width: 470px) {
+  .main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 300px) {
+  .main {
+    width: 90%;
+  }
+}

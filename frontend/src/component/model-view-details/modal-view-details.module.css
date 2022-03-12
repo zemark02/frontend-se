@@ -1,0 +1,201 @@
+.modalContainer {
+  position: absolute;
+  width: 617px;
+  min-height: 560spx;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  z-index: 200;
+}
+
+.modalContainer h1 {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  margin: 10px 0px;
+}
+
+.modalContainer p1 {
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0px 0px 4px 0px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0px 24px;
+}
+
+.childrenContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 0px;
+}
+
+.specialContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.specialChildrenContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 8px 62px 8px 0px;
+}
+
+.longInput {
+  position: static;
+  width: 562px;
+  height: auto;
+  min-height: 32px;
+
+  border: 1px solid rgba(118, 118, 118, 0.3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px 16px;
+  pointer-events: none;
+  background-color: rgba(239, 239, 239, 0.3);
+  color: rgb(84, 84, 84);
+
+  font-family: Asap;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.shortInput {
+  position: static;
+  width: 140px;
+  height: auto;
+  min-height: 32px;
+
+  border: 1px solid rgba(118, 118, 118, 0.3);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 8px 16px;
+  pointer-events: none;
+  background-color: rgba(239, 239, 239, 0.3);
+  color: rgb(84, 84, 84);
+
+  font-family: Asap;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.imageContainer img {
+  width: auto;
+  height: 120px;
+  margin: 0px 14px 0px 0px;
+}
+
+.downloadButton {
+  width: 159px;
+  height: 32px;
+  border-radius: 10000px;
+  padding: 0px 16px;
+
+  background: #ffffff;
+  border: 1px solid #00cd90;
+
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+
+  cursor: pointer;
+}
+
+.downloadButton:hover {
+  background-color: #00cd90;
+  opacity: 0.8;
+  color: #ffffff;
+}
+
+.downloadButton:active {
+  background-color: #00cd90;
+  opacity: 1;
+  color: #ffffff;
+}
+
+.doneButton {
+  width: 108px;
+  height: 32px;
+  border-radius: 10000px;
+  padding: 0px 16px;
+
+  background-color: #00cd90;
+  color: #ffffff;
+  border: none;
+
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+
+  cursor: pointer;
+
+  float: right;
+  margin: 24px 24px 24px 0px;
+}
+
+.doneButton:hover {
+  opacity: 0.8;
+}
+
+.doneButton:active {
+  opacity: 1.2;
+}
+
+.declineButton {
+  width: 108px;
+  height: 32px;
+  border-radius: 10000px;
+  padding: 0px 16px;
+
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+
+  font-family: Asap;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+
+  cursor: pointer;
+
+  float: right;
+  margin: 24px 24px 24px 0px;
+}
+
+.declineButton:hover {
+  opacity: 0.8;
+}
+
+.declineButton:active {
+  opacity: 1.2;
+}
+
+@media (max-width: 470px) {
+  .main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 300px) {
+  .main {
+    width: 90%;
+  }
+}

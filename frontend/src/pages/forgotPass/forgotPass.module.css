@@ -1,0 +1,72 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 20px;
+
+  position: absolute;
+  min-width: 369px;
+  min-height: 100px;
+  left: auto;
+  top: auto;
+
+  background: #ffffff;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  align-items: flex-start;
+}
+
+.main h1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 305px;
+  height: 23px;
+  left: 15px;
+  top: 15px;
+
+  font-family: Asap;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+  margin: 0px;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+}
+
+.error_message {
+  order: 0;
+  margin: -22px 0px 0px 0px;
+}
+
+@media (max-width: 470px) {
+  .main {
+    min-width: 80%;
+  }
+  .main > div,
+  .main h1,
+  .main form,
+  .input_container {
+    width: 100%;
+  }
+
+  .main h1 {
+    margin: 0;
+  }
+}

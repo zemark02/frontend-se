@@ -1,0 +1,66 @@
+.container {
+  min-width: 100%;
+  min-height: 100vh;
+  background-image: url("../../../public/login-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  margin-top: 112px;
+  padding: 40px 24px;
+}
+.user_pending_status_container,
+.user_failed_status_container {
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.user_pending_status_container {
+  border: 1px solid #ffb54b;
+}
+
+.user_failed_status_container {
+  border: 1px solid #d02227;
+}
+
+.pending_icon {
+  font-size: 24px;
+  color: #ffb54b;
+}
+
+.failed_icon {
+  font-size: 24px;
+  color: #d02227;
+}
+
+@media (max-width: 900px) {
+  .user_pending_status_container,
+  .user_failed_status_container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 730px) {
+  .container {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    margin-top: 60px;
+    padding: 40px 16px;
+  }
+}
+
+@media (max-width: 300px) {
+  .container {
+    margin-top: 50px;
+  }
+}
